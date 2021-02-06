@@ -1,10 +1,13 @@
+@charset "UTF-8";
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,400;0,700;1,100;1,400;1,700&display=swap');
+
 /* Global */
 
 :root {
-    --dark-blue: #363F5F;
+    --dark-blue: #363f5f;
     --green: #49AA26;
-    --light-green: #3DD705;
-    --red: #E92929;
+    --light-green: #3dd705;
+    --red: #e92929;
 
 }
 
@@ -19,16 +22,16 @@ html {
 }
 
 body {
-    background: #F0F2F5;
+    background: #f0f2f5;
     font-family: 'Poppins', sans-serif
 }
 
 .sr-only {
     position: absolute;
-    width: 0.0625rem;
-    height: 0.0625rem;
+    width: 1px;
+    height: 1px;
     padding: 0;
-    margin: -0.0625rem;
+    margin: -1px;
     overflow: hidden;
     clip: rect(0, 0, 0, 0);
     white-space: nowrap;
@@ -36,7 +39,7 @@ body {
 }
 
 .container {
-    width: min(90vw, 50rem);
+    width: min(90vw, 800px);
     margin: auto;
 }
 
@@ -64,8 +67,8 @@ a:hover {
 }
 
 button {
-    height: 3.125rem;
     width: 100%;
+    height: 50px;
 
     border: none;
 
@@ -85,7 +88,7 @@ button:hover {
 
 .button.new {
     display: inline-block;
-    margin-bottom: 0.8rem;
+    margin-bottom: .8rem;
 }
 
 .button.cancel {
@@ -116,7 +119,7 @@ header {
 }
 
 #logo {
-    color: white;
+    color: #fff;
     font-weight: 100;
 }
 
@@ -137,9 +140,9 @@ header {
 
 .card {
     background: white;
+    padding: 1.5rem 2rem;
     border-radius: 0.25rem;
 
-    padding: 1.5rem 2rem;
     margin-bottom: 2rem;
 
     color: var(--dark-blue);
@@ -178,7 +181,7 @@ header {
 #data-table {
     width: 100%;
     border-spacing: 0 0.5rem;
-    color: #969CB3;
+    color: #969cb3;
 }
 
 table thead tr th:first-child,
@@ -201,11 +204,11 @@ table thead th {
 }
 
 table tbody tr {
-    opacity: 0.7;
+    opacity: 0.7
 }
 
 table tbody tr:hover {
-    opacity: 1;
+    opacity: 1
 }
 
 table tbody td {
@@ -213,16 +216,20 @@ table tbody td {
     padding: 1rem 2rem;
 }
 
+table tbody td img:hover {
+    cursor: pointer;
+}
+
 td.description {
     color: var(--dark-blue);
 }
 
 td.income {
-    color: #12A454;
+    color: #12a454;
 }
 
 td.expense {
-    color: var(--red);
+    color: #e92929;
 }
 
 
@@ -253,7 +260,7 @@ td.expense {
 }
 
 .modal {
-    background: #F0F2F5;
+    background: #F0F2f5;
     padding: 2.4rem;
 
     position: relative;
@@ -264,7 +271,7 @@ td.expense {
 /* Formulário */
 
 #form {
-    max-width: 31.25rem;
+    max-width: 500px;
 }
 
 #form h2 {
@@ -284,7 +291,7 @@ input {
     margin-top: 0.8rem;
 }
 
-.input-group small {
+.input-group .help {
     opacity: 0.4;
 }
 
@@ -311,9 +318,9 @@ footer {
 }
 
 
-/* Responsivo */
+/* Responsivo  */
 
-@media (min-width: 50rem) {
+@media (min-width: 800px) {
     html {
         font-size: 87.5%;
     }
